@@ -1,12 +1,12 @@
 CXX = g++
 
-testComplex.o: testComplex.cpp Complex.hpp
+testComplex.o: testcomplex.cpp Complex.hpp
 	$(CXX) -c testComplex.cpp
 	
-Complex.o: Complex.cpp Complex.hpp
+Complex.o: complex.cpp complex.hpp
 	$(CXX) -c Complex.cpp
 	
-testComplex: testComplex.o Complex.o
+testComplex: testcomplex.o complex.o
 	$(CXX) Complex.o testComplex.o -o testComplex
 	
 
