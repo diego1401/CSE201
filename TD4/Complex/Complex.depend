@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1571161539 source:c:\users\diego\desktop\cse201\td4\complex.cpp
+	"complex.hpp"
+
+1571161539 c:\users\diego\desktop\cse201\td4\complex.hpp
+	<iostream>
+	<cmath>
+
