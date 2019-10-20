@@ -1,12 +1,12 @@
 #include <iostream>
 #include "LinkedList.hpp"
 
-ListNode::ListNode(int d,ListNode* nxt){
+ListNode::ListNode(int d,ListNode* nxt) {
     data = d;
     next = nxt;
     }
 
-ListNode::~ListNode(){;}
+ListNode::~ListNode(){}
 
 LinkedList::LinkedList(){
     first = NULL;
