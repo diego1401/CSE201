@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1571906048 source:c:\users\diego\desktop\cse201\td6\namespaces\shape.cpp
+	"Shape.hpp"
+
+1571904404 c:\users\diego\desktop\cse201\td6\namespaces\shape.hpp
+	<string>
+
+1571904412 source:c:\users\diego\desktop\cse201\td6\namespaces\testgeometry.cpp
+	<iostream>
+	"Polygon.hpp"
+
+1571904408 c:\users\diego\desktop\cse201\td6\namespaces\polygon.hpp
+	<string>
+	"Shape.hpp"
+
