@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1571687079 source:c:\users\diego\desktop\cse201\td5\complex2\main.cpp
+	<iostream>
+	"Complex.hpp"
+
+1571687170 c:\users\diego\desktop\cse201\td5\complex2\complex.hpp
+
+1571687066 source:c:\users\diego\desktop\cse201\td5\complex2\complex.cpp
+	<iostream>
+	<cmath>
+	"Complex.hpp"
+

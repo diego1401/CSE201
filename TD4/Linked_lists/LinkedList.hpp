@@ -1,3 +1,6 @@
+#pragma once
+#include <cstdlib>
+
 class ListNode {
   public:
     int data;

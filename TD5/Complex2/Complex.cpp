@@ -3,7 +3,6 @@
 
 #include "Complex.hpp"
 
-
 Complex::Complex() {
   real = 0.0;
   imaginary = 0.0;
@@ -12,6 +11,7 @@ Complex::Complex() {
 Complex::Complex(double real, double imaginary) {
   this->real = real;
   this->imaginary = imaginary;
+  }
 }
 
 double Complex::getReal() {
@@ -43,9 +43,11 @@ void Complex::normalize() {
   }
 }
 
+void Complex::setMax(){
+    if( maxC.magnitude() < magnitude() ) {
+        maxC.re
+    } }
+
 Complex::~Complex() {
   std::cout << "Destroying number " << real << " + " << imaginary << " * i" << std::endl;
 }
-
-// Print a the complex number with the maximum magnitude
-static void printMaxComplex();

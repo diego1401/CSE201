@@ -1,12 +1,15 @@
 #include <iostream>
-#include "LinkedList.hpp"
+#include"LinkedList.hpp"
+
 
 ListNode::ListNode(int d,ListNode* nxt) {
     data = d;
     next = nxt;
     }
 
-ListNode::~ListNode(){}
+ListNode::~ListNode(){
+    if (next != NULL) delete next;
+    }
 
 LinkedList::LinkedList(){
     first = NULL;
@@ -14,35 +17,47 @@ LinkedList::LinkedList(){
     }
 
 LinkedList::~LinkedList(){
-    while ((*first).next != NULL){
-            ListNode temp = *(first->next);
-            delete first;
-            first = &temp;
-    }}
+    if (first != NULL) delete first;
+    }
 
 void LinkedList::display(){
-    ListNode temp = *first;
-    while (temp.next != NULL){
-            std::cout<<temp.data<< " ";
-            temp = *(temp.next);
+    ListNode *temp = first;
+    if (temp == NULL){
+        std::cout << "--" ;
+        return;
     }
+
+    while (temp->next != NULL){
+            std::cout<<temp->data<< " ";
+            temp = temp->next;
+    }
+    std::cout << temp -> data << std::endl;
     }
 
 void LinkedList::append (int d){
-    (*last).next = new ListNode(d,NULL);
+
+    if (last == NULL){
+
+        first = new ListNode(d);
+        last = first;
+    }
+
+    else{
+        last->next = new ListNode(d);
+        last = last->next;
+
+    }
     }
 
 void LinkedList::prepend(int d){
-    (*first).next = new ListNode(d,first);
+    first = new ListNode(d,first);
+    if (last = NULL) last = first;
     }
 
 LinkedList* LinkedList::filterSmaller(int treshold){
-    LinkedList* L;
-    L = new LinkedList();
-    ListNode temp = *first;
-    while (temp.next != NULL){
-        int d = (*(temp.next)).data;
-        if ( d <= treshold){(*L).append(d);}
-        temp = *(temp.next);}
+    LinkedList* L = new LinkedList;
+    for (ListNode *cur = first;cur != NULL;cur = cur->next)
+        if (cur->data <= treshold)
+            L ->append(cur->data);
     return L;
     }

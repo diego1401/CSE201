@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1571903629 source:c:\users\diego\desktop\cse201\td6\organizing_files\base.cpp
+	"Base.hpp"
+
+1571903595 c:\users\diego\desktop\cse201\td6\organizing_files\base.hpp
+
+1571903595 source:c:\users\diego\desktop\cse201\td6\organizing_files\main.cpp
+	"Base.hpp"
+	"Derived.hpp"
+	<iostream>
+
+1571904156 c:\users\diego\desktop\cse201\td6\organizing_files\derived.hpp
+	"Base.hpp"
+
